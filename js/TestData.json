@@ -1,0 +1,66 @@
+{
+  "Programs": 
+    [
+      {
+        "GroupName": "Content Engagement",
+        "GroupAvatar": "images/defaultGroupAvatar.png",
+        "Description": "1 on 1 Coaching ",
+        "TotalMembers": 17,
+        "LastPost": null
+      },
+      {
+        "GroupName": "Content Engagement",
+        "GroupAvatar": "images/defaultGroupAvatar.png",
+        "Description": "1 on 1 Coaching ",
+        "TotalMembers": 17,
+        "LastPost": {
+          "Post": "Hi",
+          "UserName": "Patient",
+          "AvatarURL": "images/defaultAvatar.png",
+          "Date": "2 months ago"
+        }
+      }
+    ]
+  ,
+  "CurrentProgram": {
+    "Name": "The Program Name",
+    "Members":
+    [
+      {
+        "Name": "Ami Klein",
+        "Phase": "2/52",
+        "AvatarURL": "images/defaultAvatar.png",
+        "Age": 30,
+        "AvgBGPreMeal": {
+          "Value": "N/A",
+          "Date": ""
+        },
+        "CriticalBGLogs": "0",
+        "LastClientMessage": "N/A",
+        "LastFoodPhoto": "N/A",
+        "LastMoodReported": {
+          "Value": "N/A",
+          "Color": "white"
+        }
+      },
+      {
+        "Name": "Andrey Golovin",
+        "Phase": "2/52",
+        "AvatarURL": "images/defaultAvatar.png",
+        "Age": 30,
+        "AvgBGPreMeal": {
+          "Value": "Hey",
+          "Date": "08/03/2017 02:59 AM"
+        },
+        "CriticalBGLogs": "0",
+        "LastClientMessage": "N/A",
+        "LastFoodPhoto": "N/A",
+        "LastMoodReported": {
+          "Value": "10",
+          "Color": "green"
+        }
+      }
+
+    ]
+  }
+}
