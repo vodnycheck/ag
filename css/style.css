@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('fonts/Raleway-Regular.ttf');
+}
+
+.header {
+	font-family: 'Raleway-Regular';
+	font-size: 18px;
+	color: #fff;
+	background-color: #5c9dcd;
+}
