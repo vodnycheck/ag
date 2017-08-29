@@ -153,33 +153,118 @@
 		font-weight: 700;
 		color: #fff;
 		background-color: #3c5368;
+		font-size: 13px;
 	}
 
-	.program-name tbody td {
+	.program-name thead th {
+		border: 0;
+	}
+
+	.program-name thead th:first-of-type {
+		width: 259px;
 		text-align: center;
 	}
 
-	.program-name tbody th {
+	.program-name tbody tr td {
+		text-align: center;
+		border: 1px solid #ddd;
+		padding: 7px 9px 5px;
+		vertical-align: middle;
+		font-family: 'Raleway', sans-serif;
+		color: #3c5368;
+	}
+
+	.program-name tbody tr td:first-of-type {
+		padding: 7px 9px 5px;
 		text-align: left;
 	}
 
 	.program-name .message {
-
+		display: inline-block;
+		float: left;
+		width: 22px;
+		height: 15px;
+		background-image: url('../images/message.png');
 	}
 
 	.program-name .image-wrap {
 		width: 60px;
 		height: 60px;
+		float: left;
+		margin: 0 9px;
+	}
+
+	.program-name img {
+		max-width: 100%;
+		height: auto;
 	}
 
 	.program-name .name {
-
+		font-size: 17px;
+		color: #3c5368;
 	}
 
 	.program-name .phase {
-
+		font-size: 16px;
+		font-family: 'Raleway', sans-serif;
+		color: #999;
 	}
 
 	.program-name .age {
+		font-size: 16px;
+		font-family: 'Raleway', sans-serif;
+		color: #999;
+	}
 
+	.program-name .date {
+		color: #999;
+		margin: 9px 0 -6px;
+	}
+
+	.program-name .white {
+		color: #3c5368;
+		background: #fff;
+	}
+
+	.program-name .green {
+		color: #fff;
+		background: #68e3ac;
+	}
+	/*TODO need to add other colors*/
+
+.footer {
+	margin: 40px -15px 0;
+	padding: 0 15px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+
+	.footer .copy {
+		color: #475870;
+		margin-top: 20px;
+		font-size: 14px;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: -.3px;
+		float: left;
+	}
+
+	.footer .logo {
+		width: 166px;
+		height: 60px;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+		background-color: #fff;
+		color: #475870;
+		float: right;
+	}
+
+	.footer .logo::before {
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.footer .logo {
 	}
