@@ -99,6 +99,7 @@
 
 .latest-comment {
 	overflow: hidden;
+	margin-left: -15px;
 }
 
 	.latest-comment .image-wrap {
