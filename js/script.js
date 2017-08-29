@@ -4,6 +4,7 @@ $(function(){
 		var $programElement = $('#program');
 		var $tableBodyElement = $('#table');
 
+		/*build program section*/
 		data.Programs.forEach(function(item){
 			var $newItem = $('<div class="row program-item"></div>');
 			$programElement.append($newItem);
@@ -36,6 +37,7 @@ $(function(){
 			}
 		});
 
+		/*build table section*/
 		data.CurrentProgram.Members.forEach(function(item){
 			$tableBodyElement.append('' +
 				'<tr>' +
@@ -44,9 +46,11 @@ $(function(){
 						'<div class="image-wrap">' +
 							'<img src="' + item.AvatarURL + '" alt="">' +
 						'</div>' +
-						'<div class="name">' + item.Name + '</div>' +
-						'<div class="phase">Phase: ' + item.Phase + '</div>' +
-						'<div class="age">' + item.Age + '</div>' +
+						'<div class="info-wrap">' +
+							'<div class="name">' + item.Name + '</div>' +
+							'<div class="phase">Phase: ' + item.Phase + '</div>' +
+							'<div class="age">' + item.Age + '</div>' +
+						'</div>' +
 					'</td>' +
 					'<td>' +
 						'<div class="value">' + item.AvgBGPreMeal.Value + '</div>' +
@@ -71,4 +75,3 @@ $(function(){
 	});
 });
 
-//https://dev-mdt-api.wellnesslayers.com/TestData.json

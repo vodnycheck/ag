@@ -12,7 +12,7 @@
 
 .heading-h2 {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 30px 0;
+	margin: 10px 0;
 	font-size: 29px;
 	letter-spacing: 1.3px;
 	color: #1b7ac5;
@@ -20,7 +20,7 @@
 
 .header {
 	padding: 12px 16px 15px;
-	margin: 0 -15px 42px;
+	margin: 0 -15px 22px;
 	font-size: 36px;
 	background-color: #5c9dcd;
 	color: #fff;
@@ -33,7 +33,7 @@
 /*------------------*/
 .program-item {
 	padding: 17px 0;
-	margin: 0;
+	margin: 0 -15px;
 	border-bottom: 1px solid #ccd1d9;
 }
 
@@ -48,18 +48,18 @@
 
 	.program-description .image-wrap {
 		display: inline-block;
-		width: 150px;
-		height: 150px;
+		width: 100px;
+		height: 100px;
 		overflow: hidden;
 		-webkit-border-radius: 150px;
 		-moz-border-radius: 150px;
 		border-radius: 150px;
 		float: left;
-		margin-right: 30px;
+		margin-right: 15px;
 	}
 
 	.program-description .title {
-		margin-top: 25px;
+		margin-top: 0;
 		color: #51a9f4;
 		font-size: 25px;
 		letter-spacing: .2px;
@@ -75,16 +75,16 @@
 	.program-description .members {
 		margin-top: 15px;
 		text-indent: 1px;
-		font-size: 18px;
+		font-size: 14px;
 		color: #3c5368;
 		letter-spacing: .7px;
 	}
 
 	.program-description  .number {
 		display: inline-block;
-		width: 30px;
-		height: 30px;
-		margin: -4px 1px 0;
+		width: 22px;
+		height: 22px;
+		margin: 0;
 		vertical-align: top;
 		text-align: center;
 		-webkit-border-radius: 30px;
@@ -94,12 +94,12 @@
 		color: #fff;
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
-		font-size: 21px;
+		font-size: 14px;
 	}
 
 .latest-comment {
 	overflow: hidden;
-	margin-left: -15px;
+	margin-left: 0;
 }
 
 	.latest-comment .image-wrap {
@@ -126,13 +126,13 @@
 	.latest-comment .title {
 		margin-top: 15px;
 		color: #3c5368;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 700;
 	}
 
 	.latest-comment .text {
 		margin-top: 4px;
-		font-size: 17px;
+		font-size: 14px;
 		color: #7f8389;
 		white-space: nowrap;
 		overflow: hidden;
@@ -181,22 +181,28 @@
 
 	.program-name .message {
 		display: inline-block;
-		float: left;
 		width: 22px;
 		height: 15px;
+		vertical-align: top;
 		background-image: url('../images/message.png');
 	}
 
 	.program-name .image-wrap {
 		width: 60px;
 		height: 60px;
-		float: left;
+		display: inline-block;
 		margin: 0 9px;
+		vertical-align: top;
 	}
 
 	.program-name img {
 		max-width: 100%;
 		height: auto;
+	}
+
+	.program-name .info-wrap {
+		display: inline-block;
+		vertical-align: top;
 	}
 
 	.program-name .name {
@@ -236,7 +242,6 @@
 	margin: 40px -15px 0;
 	padding: 0 15px;
 	overflow: hidden;
-	background-color: #f5f5f5;
 }
 
 	.footer .copy {
@@ -245,17 +250,14 @@
 		font-size: 14px;
 		font-family: 'Raleway', sans-serif;
 		letter-spacing: -.3px;
-		float: left;
 	}
 
 	.footer .logo {
 		width: 166px;
 		height: 60px;
-		text-align: center;
 		font-family: 'Raleway', sans-serif;
 		background-color: #fff;
 		color: #475870;
-		float: right;
 	}
 
 	.footer .logo::before {
@@ -266,5 +268,63 @@
 		vertical-align: middle;
 	}
 
-	.footer .logo {
+@media (min-width: 768px) {
+	.heading-h2 {
+		margin: 30px 0;
 	}
+
+	.header {
+		margin: 0 -15px 42px;
+	}
+
+	.program-item {
+		margin: 0;
+	}
+
+	.program-description .image-wrap {
+		width: 150px;
+		height: 150px;
+		margin-right: 30px;
+	}
+
+	.program-description .title {
+		margin-top: 25px;
+		font-size: 16px;
+	}
+
+	.program-description .members {
+		font-size: 18px;
+	}
+
+	.program-description  .number {
+		width: 30px;
+		height: 30px;
+		margin: -4px 1px 0;
+		font-size: 21px;
+	}
+
+	.latest-comment {
+		margin-left: -15px;
+	}
+
+	.latest-comment .title {
+		font-size: 16px;
+	}
+
+	.latest-comment .text {
+		font-size: 17px;
+	}
+
+	.footer {
+		background-color: #f5f5f5;
+	}
+
+	.footer .copy {
+		float: left;
+	}
+
+	.footer .logo {
+		float: right;
+		text-align: center;
+	}
+}
