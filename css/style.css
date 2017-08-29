@@ -61,7 +61,7 @@
 	.program-description .title {
 		margin-top: 0;
 		color: #51a9f4;
-		font-size: 25px;
+		font-size: 16px;
 		letter-spacing: .2px;
 	}
 
@@ -145,9 +145,9 @@
 		font-size: 14px;
 	}
 
-	/*-------------------------------------------------*/
-	/*program name block -------------*/
-	/*------------------*/
+/*-------------------------------------------------*/
+/*program name block -------------*/
+/*------------------*/
 	.program-name thead {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
@@ -158,6 +158,10 @@
 
 	.program-name thead th {
 		border: 0;
+	}
+
+	.program-name thead tr th {
+		border-bottom: 0;
 	}
 
 	.program-name thead th:first-of-type {
@@ -177,6 +181,16 @@
 	.program-name tbody tr td:first-of-type {
 		padding: 7px 9px 5px;
 		text-align: left;
+	}
+
+	.program-name .sort {
+		display: inline-block;
+		width: 12px;
+		height: 15px;
+		vertical-align: top;
+		margin-right: -4px;
+		background-image: url('../images/arrows.png');
+		cursor: pointer;
 	}
 
 	.program-name .message {
@@ -239,7 +253,7 @@
 	/*TODO need to add other colors*/
 
 .footer {
-	margin: 40px -15px 0;
+	margin: 20px 0 0;
 	padding: 0 15px;
 	overflow: hidden;
 }
@@ -289,11 +303,15 @@
 
 	.program-description .title {
 		margin-top: 25px;
-		font-size: 16px;
+		font-size: 25px;
 	}
 
 	.program-description .members {
 		font-size: 18px;
+	}
+
+	.program-name .sort {
+		float: right;
 	}
 
 	.program-description  .number {

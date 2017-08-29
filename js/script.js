@@ -1,10 +1,12 @@
 $(function(){
 	$.getJSON( "js/TestData.json", function(data) {
+		buildProgram(data)
+		buildTable(data)
+	});
 
-		var $programElement = $('#program');
-		var $tableBodyElement = $('#table');
-
+	function buildProgram(data) {
 		/*build program section*/
+		var $programElement = $('#program');
 		data.Programs.forEach(function(item){
 			var $newItem = $('<div class="row program-item"></div>');
 			$programElement.append($newItem);
@@ -36,8 +38,11 @@ $(function(){
 					'');
 			}
 		});
+	}
 
+	function buildTable(data) {
 		/*build table section*/
+		var $tableBodyElement = $('#table');
 		data.CurrentProgram.Members.forEach(function(item){
 			$tableBodyElement.append('' +
 				'<tr>' +
@@ -64,7 +69,10 @@ $(function(){
 				'')
 		});
 
+		/*members amount*/
 		$('#members-number').text(data.CurrentProgram.Members.length);
+
+		/*table name*/
 		$('#table-name').text(data.CurrentProgram.Name);
 
 		/*tooltip init*/
@@ -72,6 +80,5 @@ $(function(){
 			title: "Send message",
 			placement: "right",
 		});
-	});
+	}
 });
-
