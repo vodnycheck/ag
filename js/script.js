@@ -1,7 +1,7 @@
 $(function(){
 	$.getJSON( "js/TestData.json", function(data) {
-		buildProgram(data)
-		buildTable(data)
+		buildProgram(data);
+		buildTable(data);
 	});
 
 	function buildProgram(data) {
@@ -14,7 +14,7 @@ $(function(){
 				'<div class="col-xs-12 col-md-6">' +
 					'<div class="program-description">' +
 						'<div class="image-wrap">' +
-							'<img src="images/defaultGroupAvatar.png" alt="">' +
+							'<img src="' + item.GroupAvatar + '" alt="">' +
 						'</div>' +
 						'<div class="title">' + item.GroupName + '</div>' +
 						'<div class="coach-type">' + item.Description + '</div>' +
